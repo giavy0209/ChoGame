@@ -17,7 +17,7 @@ ul {
     list-style-type: none;
 }
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
@@ -27,7 +27,7 @@ img {
 }
 
 body {
-    font-size: 14px;
+    font-size: 14px !important;
     font-family: 'Roboto', sans-serif;
     line-height: 1.285;
     color: #555;
@@ -65,6 +65,7 @@ body {
     font-size: 0;
     margin-left: -15px;
     margin-right: -15px;
+    display: block !important;
 }
 .row > [class*="hm-col-"],
 .row[class*="hm-column-"] .item {
@@ -72,7 +73,7 @@ body {
     padding-right: 15px;
     display: inline-block;
     vertical-align: top;
-    font-size: 14px;
+    font-size: 14px !important;
 }
 .hm-col-12 {
     width: 100%;
@@ -100,7 +101,7 @@ body {
 }
 
 .row.va-m [class*="hm-col-"] {
-    vertical-align: middle;
+    vertical-align: middle !important;
 }
 
 
@@ -164,7 +165,7 @@ form a:hover {
 .input-group textarea {
     border: 1px solid #dbdbdb;
     height: 35px;
-    padding: 0 40px 0 13px;
+    padding: 0 40px 0 15px;
     width: 100%;
     border-radius: 5px;
     font-size: 13px;
@@ -195,6 +196,7 @@ form a:hover {
 .full-width{
     background-color: #181818;
 }
+
 /* ================01.HEADER=============== */
 header .contact p{
     color: #fff;
@@ -205,14 +207,45 @@ header .contact p + p{
 header .contact p i{
     margin-right: 10px;
 }
+.search-header .input-group input{
+    width: 35px;
+    padding: 0 17px;
+    color: #999;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+.search-header .input-group input:hover,
+.search-header .input-group input:active{
+    width: 100%;
+    border-radius: 30px;
+    padding: 0 40px 0 13px;
+}
+.search-header .input-group input:hover ~ i,
+.search-header .input-group input:active ~ i{
+    right: 20px;
+    transition: all .3s ease;
+
+}
+.search-header .input-group i{
+    /* display: none; */
+    top: 50%;
+    right: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+
+}
+
 /* =================02.MENU================ */
-main .container{
+ main .container{
     background-color: #191919;
     padding: 20px 20px;
     border-radius: 5px;
     margin-top: 20px; 
 }
-.menu{
+/*.menu{
     text-align: center;
     background-color: #444;
     border-radius: 5px;
@@ -220,18 +253,17 @@ main .container{
 .menu > li{
     display: inline-block;
     transition: all .3s ease;
-    border-right: 1px solid #eee;
-}
+    }
 .menu li{
     position: relative;
 }
 .menu a {
     display: block;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     color: #eee;
-    padding: 15px 15px;
+    padding: 12px 15px;
 }
 
 .menu ul {
@@ -268,7 +300,23 @@ main .container{
 }
 nav{
     padding-bottom: 30px;
-}
+} */
+
+
+
+/* body {
+    display: flex;
+    height: 100vh;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: #fff;
+    font-family: 'Open Sans', sans-serif;
+  }
+   */
+ 
 /* ================03.SIDE BAR============== */
 .widgets{
     background-color: #fff;
@@ -349,7 +397,7 @@ nav{
     border-top: 1px dashed #ccc;
 }
 /* ==============05.ProDuct============== */
-.wrapper-product + .wrapper-product{
+.wrapper-product{
     margin-top: 50px;
 }
 .wrapper-product .title-product{
@@ -369,6 +417,7 @@ nav{
     color: #eee;
     font-weight: 700;
     margin-top: 10px;
+    font-size: 16px;
 }
 .wrapper-product .list-product .product h1 a:hover{
     color: #999;
@@ -437,7 +486,9 @@ nav{
 .fb-comments *{
     color:  #eee !important;
 }
-
+.btn{
+    border-radius: 0px !important;
+}
 /* ==============Footer============== */
 footer{
     margin-top: 50px;
@@ -464,6 +515,7 @@ footer .content h3{
     color: #eee;
     border-bottom: 2px solid #eee;
     padding: 10px 0;
+    font-size: 18px;
 }
 footer .content ul{
     margin-top: 10px;
@@ -474,4 +526,22 @@ footer .content li a{
 }
 footer .content li a:hover{
     color: #999;
+}
+/* ==============BANNER============= */
+.banner *{
+    z-index: 1;
+}
+.banner a{
+    height: 800px;
+    width: 180px;
+    background-color: #eee;
+    position: fixed;
+    z-index: -1;
+    top: 10%;
+}
+.banner a:first-child{
+    left: 4%;
+}
+.banner a:last-child{
+    right: 4%;
 }

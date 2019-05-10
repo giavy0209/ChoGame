@@ -1,0 +1,56 @@
+@media only screen and (max-width:1065px){
+    main .hm-col-3{
+        display: none !important;
+    }
+    main .hm-col-9{
+        width: 100%;
+    }
+    .banner{
+        display: none;
+    }
+}
+@media only screen and (max-width:880px){
+    footer .row > *{
+        width: 100%;
+    }
+    footer .hm-col-9 h3{
+        font-size: 16px;
+    }
+    .hm-column-4 .item{
+        width: 33.3333%;
+    }
+    .hm-column-4 .item:not(:nth-child(-n + 3)) {
+        margin-top: 30px;
+    }
+    .hm-column-4 .item:not(:nth-child(-n + 6)) {
+        display: none;
+    }
+}
+@media only screen and (max-width:600px){
+    .hm-column-4 .item{
+        width: 50%;
+    }
+    .hm-column-4 .item:not(:nth-child(-n + 2)) {
+        margin-top: 30px;
+    }
+    .hm-column-4 .item:not(:nth-child(-n + 4)) {
+        display: none;
+    }
+    
+    .top-header > *{
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:450px){
+    .hm-column-4 .item{
+        width: 100%;
+    }
+    .hm-column-4 .item:not(:nth-child(-n + 1)) {
+        margin-top: 30px;
+    }
+    .hm-column-4 .item:not(:nth-child(-n + 2)) {
+        display: none;
+    }
+}
