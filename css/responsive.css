@@ -31,6 +31,9 @@
     .hm-col-6{
         width: 100%;
     }
+    header .hm-col-6{
+        width: 50%;
+    }
 }
 @media only screen and (max-width:700px){
     .wrapper-blog .blog .hm-col-9{
