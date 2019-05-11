@@ -674,7 +674,11 @@ footer .content li a:hover{
     pointer-events: none;
 }
 .btn.buy:hover{
-    background-color: #dbdbdb;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #eee;
+}
+.btn.buy:hover a{
+    color: #eee;
 }
 .btn.buy:hover::before{
     left: 100%;
