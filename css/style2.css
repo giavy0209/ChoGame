@@ -829,6 +829,9 @@
     }
 
   @media (max-width: 45rem) {
+    .menu ol li ol{
+        display: none;
+    }
     .menu {
       background-image: linear-gradient(to bottom, #444 0%, #444 100%);
     }

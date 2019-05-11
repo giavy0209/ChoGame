@@ -230,6 +230,10 @@ form a:hover {
 }
 
 /* ================01.HEADER=============== */
+header .logo{
+    width: 130px;
+    display: inline-block;
+}
 header .contact p{
     color: #fff;
 }
