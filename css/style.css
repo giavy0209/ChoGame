@@ -13,7 +13,7 @@ a, span, :before, :after {
 :focus {
     outline: none;
 }
-ul {
+ul, li {
     list-style-type: none;
 }
 a {
