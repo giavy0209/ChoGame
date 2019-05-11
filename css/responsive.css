@@ -1,8 +1,11 @@
 @media only screen and (max-width:1065px){
-    main .hm-col-3{
-        display: none !important;
+    main > .container> .row >.hm-col-3{
+        display: none;
     }
-    main .hm-col-9{
+    main .wrapper-blog .hm-col-3{
+        /* display: inline-block; */
+    }
+    main > .container> .row > .hm-col-9{
         width: 100%;
     }
     .banner{
@@ -25,6 +28,17 @@
     .hm-column-4 .item:not(:nth-child(-n + 6)) {
         display: none;
     }
+    .hm-col-6{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:700px){
+    .wrapper-blog .blog .hm-col-9{
+        width: 100%;
+    }
+    .wrapper-blog .blog .hm-col-3{
+        width: 40%
+    }
 }
 @media only screen and (max-width:600px){
     .hm-column-4 .item{
@@ -41,6 +55,10 @@
         width: 100%;
         margin-top: 30px;
         text-align: center;
+    }
+    .wrapper-blog .blog .hm-col-3,
+    .wrapper-blog .blog .hm-col-9{
+        width: 100%;
     }
 }
 @media only screen and (max-width:450px){
